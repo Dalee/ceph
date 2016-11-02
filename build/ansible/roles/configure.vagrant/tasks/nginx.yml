@@ -1,0 +1,13 @@
+#
+- name: nginx - main configuration file
+  template:
+    src: "project.conf.j2"
+    dest: "/etc/nginx/virtuals/project.conf"
+    mode: 0644
+    owner: "root"
+    group: "root"
+
+- name: nginx - restart (forced)
+  service:
+    name: "nginx"
+    state: "restarted"
