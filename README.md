@@ -38,7 +38,7 @@ Solution: run `vagrant provision` again, and if it doesn't help
 run inside of Vagrant vm: `sudo rm -rf /var/lib/ceph`, and run `vagrant provision` again.
 
 
-## Check cluster healt
+## Check cluster health
 
 ```
 vagrant@ceph [/home/web/ceph] > ceph -s
